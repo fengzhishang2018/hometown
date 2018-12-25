@@ -1,1 +1,17 @@
+第一篇：vue初始
+Ⅰ、简单小巧的核心，渐进式的技术栈，足以应付任何规模的应用
+Ⅱ、具有现代web开发常用的高级功能：解耦试图和数据、可复用的组件、前端路由、状态管理以及虚拟DOM
+
+第二篇：vue的数据绑定
+Ⅰ、使用new vue来创建一个新的vue实例，其中的el指的是在页面中已经存在的用来挂载实例的DOM
+Ⅱ、vue的生命周期：vue的声明周期包含八个阶段，其中常用的有三个created（此阶段vue实例已经创建，数据尚未挂载，el还不可用）、mounted（el可用，页面的逻辑业务都写在这一块）、beforeDestroy(组件销毁时使用，主要用于解绑一些事件以及清除定时器)
+【beforeCreate实例创建之前、created实例创建完成、beforeMount-el挂载之前、mounted挂在之后、beforeDestroy组件销毁之前、destroy组件销毁之后】
+【
+		备注----需要注意的是父子组件的生命周期顺序是:
+		父组件beforeCreate-->父组件created-->父组件beforeMount-->子组件beforeCreate-->子组件created-->子组件beforeMount-->子组件Mounted-->父组件Mounted(父子组件加载渲染的过程)
+		父组件beforeUpdate-->子组件beforeUpdate-->子组件updated-->父组件updated（子组件更新的过程）
+		父组件beforeUpdate-->父组件updated（父组件更新的过程）
+		父组件beforeDestroy-->子组件beforeDestroy-->子组件destroyed-->父组件destroyed（父子组件销毁的过程）
+】
+
 
